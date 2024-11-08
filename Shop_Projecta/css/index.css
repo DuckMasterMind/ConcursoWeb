@@ -1,0 +1,48 @@
+/* MAIN layput for index */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    'banner banner'
+    'box1 box2'
+    'box1 box2';
+    grid-template-rows: 40vh 20vh 20vh;
+} 
+
+#boxContainer1 {
+    grid-area: box1;
+}
+#boxContainer2 {
+    grid-area: box2;
+    padding-right: 1vw;
+}
+
+
+.CategoryButtons {
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.229);
+    display: block;
+    width: 90%;
+    height: 60%;
+    margin: 2vw;
+    border-radius: 10px;
+}
+.bannerContainer {
+    grid-area: banner;
+}
+.banner {
+    animation: bannerAnimation 15s infinite ease-in-out;
+    background-position: center;
+    background-size: cover;
+    width: 80vw;
+    height: 30vh;
+    margin: 2vw;
+    box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+ @keyframes bannerAnimation {
+    0% {background-image: url(https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg);}
+    33.33% {background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-image.jpg?w=600&quality=80);}
+    66.66% {background-image: url(https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649);}
+    100% {background-image: url(https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg);}
+ }
