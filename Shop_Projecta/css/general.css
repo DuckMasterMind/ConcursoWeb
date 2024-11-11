@@ -25,6 +25,10 @@
 
 header {
     grid-area: header;
+    background-color: rgb(240, 247, 254);
+}
+main {
+    background-color: rgb(240, 247, 254);
 }
 aside {
     grid-area: aside;
@@ -74,6 +78,3 @@ li {
 li:hover {
     text-decoration: underline;
 }
-
-
-
