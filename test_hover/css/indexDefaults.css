@@ -1,0 +1,42 @@
+#logo {
+    /* margin: 1vh; */
+    background-image: url(/img/Logo_logo_logo_logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #logo {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+@media only screen and (min-width: 600px) {
+    #logo {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #logo {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #logo {
+        height: 10vh;
+        width: 10vh;
+        background-size: contain;
+    }
+}
