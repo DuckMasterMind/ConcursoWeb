@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
     border: 0;
+    color: black;
 }
+
+header {
+    grid-area: header;
+    box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .layout {
@@ -16,19 +32,6 @@
         height: 100vh;
         grid-template-rows: 10vh 10vh 60vh 20vh;
         grid-template-columns: 1fr;
-    }
-    header {
-        grid-area: header;
-        box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-    }
-    footer {
-        grid-area: footer;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -44,19 +47,6 @@
         grid-template-rows: 10vh 10vh 60vh 20vh;
         grid-template-columns: 1fr;
     }
-    header {
-        grid-area: header;
-        box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-    }
-    footer {
-        grid-area: footer;
-    }
 }
 @media only screen and (min-width: 768px) {
     .layout {
@@ -69,21 +59,9 @@
         width: 100vw;
         height: 100vh;
         grid-template-rows: 10vh 40vh 40vh 10vh;
-        grid-template-columns: 10vw 1fr 1fr 1fr;
+        grid-template-columns: 15vw 1fr 1fr 1fr;
     }
-    header {
-        grid-area: header;
-        box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-    }
-    footer {
-        grid-area: footer;
-    }
+    
 }
 @media only screen and (min-width: 992px) {
     .layout {
@@ -96,20 +74,7 @@
         width: 100vw;
         height: 100vh;
         grid-template-rows: 10vh 40vh 40vh 10vh;
-        grid-template-columns: 10vw 1fr 1fr 1fr;
-    }
-    header {
-        grid-area: header;
-        box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-    }
-    footer {
-        grid-area: footer;
+        grid-template-columns: 15vw 1fr 1fr 1fr;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -124,18 +89,5 @@
         height: 100vh;
         grid-template-rows: 10vh 40vh 40vh 10vh;
         grid-template-columns: 15vw 1fr 1fr 1fr;
-    }
-    header {
-        grid-area: header;
-        box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
-    }
-    main {
-        grid-area: main;
-    }
-    aside {
-        grid-area: aside;
-    }
-    footer {
-        grid-area: footer;
     }
 }
