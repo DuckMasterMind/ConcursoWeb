@@ -58,16 +58,11 @@ a {
     margin-top: 1.5vw;
     box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
     border-radius: 5px;
-    background-color: blueviolet;
 }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #logo {
-        height: 10vh;
-        width: 25vh;
-    }
     ul {
         width: 100%;
         height: 80vh;
@@ -89,10 +84,6 @@ a {
     
 }
 @media only screen and (min-width: 600px) {
-    #logo {
-        height: 10vh;
-        width: 25vh;
-    }
     ul {
         width: 100%;
         height: 80vh;
@@ -117,11 +108,6 @@ a {
 
 
 @media only screen and (min-width: 768px) {
-    #logo {
-        height: 10vh;
-        width: 25vh;
-        
-    }
     ul {
         width: 100%;
         height: 80vh;
@@ -143,10 +129,6 @@ a {
 }
 
 @media only screen and (min-width: 992px) {
-    #logo {
-        height: 10vh;
-        width: 25vh;
-    }
     #banner {
         width: 78vw;
         height: 30vh;
@@ -157,11 +139,6 @@ a {
     }
 }
 @media only screen and (min-width: 1200px) {
-    #logo {
-        height: 10vh;
-        width: 25vh;
-        background-size: contain;
-    }
     #banner {
         width: 78vw;
         height: 30vh;
