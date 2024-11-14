@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#phoneNavDocument {
+    width: 1fr;
+    height: 90vh;
+    margin: 5em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
+}
+
+.button {
+    box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
+}

@@ -11,6 +11,10 @@
 header {
     grid-area: header;
     box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-areas: 
+    "logo whitespace phoneNav";
+    grid-template-columns: 10vw 80vw 10vw;
 }
 main {
     grid-area: main;
@@ -23,9 +27,43 @@ footer {
 }
 
 #logo {
-    height: 10vh;
-    width: 25vh;
+    grid-area: logo;
 }
+#phone_nav {
+    background-image: url(https://cdn.icon-icons.com/icons2/3215/PNG/512/hamburger_menu_navbar_options_icon_196495.png);
+    grid-area: phoneNav;
+    background-size: cover;
+    background-position: center;
+}
+
+#nav_burger {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul {
+    margin: 1.5vw;
+    padding: 1vw;
+    list-style: none;
+    box-shadow: 0px 27px 35px -7px rgba(0,0,0,0.75);
+    height: 80vh;
+    border-radius: 5px;
+}
+
+li {
+    display: block;
+}
+
+.navButton {
+    width: 1fr;
+    height: 1fr;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
+    padding: 18px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -45,6 +83,12 @@ footer {
     aside {
         visibility: hidden;
     }
+    header {
+        grid-template-columns: 50vw 35vw 15vw;
+    }
+    #phone_nav {
+        visibility: visible;
+    }
 }
 @media only screen and (min-width: 600px) {
     .layout {
@@ -60,8 +104,14 @@ footer {
         grid-template-columns: 1fr;
         overflow: hidden;
     }
+    header {
+        grid-template-columns: 25vw 63vw 12vw;
+    }
     aside {
         visibility: hidden;
+    }
+    #phone_nav {
+        visibility: visible;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -78,8 +128,14 @@ footer {
         grid-template-columns: 15vw 1fr 1fr 1fr;
         overflow: hidden;
     }
+    header {
+        grid-template-columns: 20vw 70vw 10vw;
+    }
     aside {
         visibility: visible;
+    }
+    #phone_nav {
+        visibility: hidden;
     }
     
 }
@@ -99,6 +155,12 @@ footer {
     aside {
         visibility: visible;
     }
+    header {
+        grid-template-columns: 15vw 75vw 10vw;
+    }
+    #phone_nav {
+        visibility: hidden;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .layout {
@@ -115,5 +177,11 @@ footer {
     }
     aside {
         visibility: visible;
+    }
+    header {
+        grid-template-columns: 11vw 80vw 9vw;
+    }
+    #phone_nav {
+        visibility: hidden;
     }
 }

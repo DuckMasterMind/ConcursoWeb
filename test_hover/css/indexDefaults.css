@@ -6,28 +6,6 @@
     background-repeat: no-repeat;
 }
 
-ul {
-    margin: 1.5vw;
-    padding: 1vw;
-    list-style: none;
-    box-shadow: 0px 27px 35px -7px rgba(0,0,0,0.75);
-    height: 80vh;
-    border-radius: 5px;
-}
-
-li {
-    display: block;
-}
-
-a {
-    width: 1fr;
-    height: 1fr;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
-    padding: 18px;
-}
-
 #banner {
     margin-left: 5vw;
     margin-top: 1.5vw;
@@ -55,7 +33,7 @@ a {
 
 #buttonContainer {
     margin-left: 5vw;
-    margin-top: 1.5vw;
+    margin-top: 1.5em;
     box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
     border-radius: 5px;
 }
