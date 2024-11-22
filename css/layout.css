@@ -14,16 +14,13 @@ header {
     display: grid;
     grid-template-areas: 
     "logo whitespace phoneNav";
-    grid-template-columns: 10vw 80vw 10vw;
 }
 main {
     grid-area: main;
+    overflow-y: auto;
 }
 aside {
     grid-area: aside;
-}
-footer {
-    grid-area: footer;
 }
 
 #logo {
@@ -62,8 +59,13 @@ li {
     border-radius: 5px;
     box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
     padding: 18px;
+    transition: all 0.5s;
 }
 
+.navButton:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 20px 30px -7px rgba(0, 0, 0, 0.904);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -71,12 +73,10 @@ li {
         display: grid;
         grid-template-areas: 
         "header"
-        "aside"
-        "main"
-        "footer";
+        "main";
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 10vh 10vh 60vh 20vh;
+        grid-template-rows: 10vh 90vh;
         grid-template-columns: 1fr;
         overflow: hidden;
     }
@@ -96,11 +96,10 @@ li {
         grid-template-areas: 
         "header"
         "aside"
-        "main"
-        "footer";
+        "main";
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 10vh 10vh 60vh 20vh;
+        grid-template-rows: 10vh 10vh 80vh;
         grid-template-columns: 1fr;
         overflow: hidden;
     }
@@ -120,11 +119,10 @@ li {
         grid-template-areas: 
         "header header header header"
         "aside main main main"
-        "aside main main main"
-        "footer footer footer footer";
+        "aside main main main";
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 10vh 40vh 40vh 10vh;
+        grid-template-rows: 10vh 40vh 50vh;
         grid-template-columns: 15vw 1fr 1fr 1fr;
         overflow: hidden;
     }
@@ -145,11 +143,10 @@ li {
         grid-template-areas: 
         "header header header header"
         "aside main main main"
-        "aside main main main"
-        "footer footer footer footer";
+        "aside main main main";
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 10vh 40vh 40vh 10vh;
+        grid-template-rows: 10vh 40vh 50vh;
         grid-template-columns: 15vw 1fr 1fr 1fr;
     }
     aside {
@@ -168,11 +165,10 @@ li {
         grid-template-areas: 
         "header header header header"
         "aside main main main"
-        "aside main main main"
-        "footer footer footer footer";
+        "aside main main main";
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 10vh 40vh 40vh 10vh;
+        grid-template-rows: 10vh 40vh 50vh;
         grid-template-columns: 15vw 1fr 1fr 1fr;
     }
     aside {
