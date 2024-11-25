@@ -111,12 +111,16 @@ h3 {
         width: 90vw;
         height: 20vh;
     }
+
     .buttonContainer {
         width: 90vw;
         height: 80vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 10vh 1fr 1fr;
+    }
+    .titlePanel {
+        grid-column: span 2;
     }
     
 }
