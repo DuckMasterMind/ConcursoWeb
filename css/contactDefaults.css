@@ -45,6 +45,9 @@
 .contact-item a:hover {
     text-decoration: underline;
 }
+footer {
+    margin-top: 20vh;
+}
 
 
 /* Extra small devices (phones, 600px and down) */

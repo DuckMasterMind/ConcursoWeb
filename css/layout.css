@@ -98,7 +98,15 @@ li {
     box-shadow: 0px 20px 30px -7px rgba(0, 0, 0, 0.904);
 }
 
-
+footer {
+    margin-left: 5vw;
+    margin-top: 1.5vw;
+    box-shadow: 0px 15px 30px -7px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    width: 78vw;
+    height: 10vh;
+    margin-bottom: 4vh;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -117,10 +125,13 @@ li {
         visibility: hidden;
     }
     header {
-        grid-template-columns: 50vw 35vw 15vw;
+        grid-template-columns: 40vw 45vw 15vw;
     }
     #phone_nav {
         visibility: visible;
+    }
+    footer {
+        width: 90vw;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -145,6 +156,9 @@ li {
     #phone_nav {
         visibility: visible;
     }
+    footer {
+        width: 90vw;
+    }
 }
 @media only screen and (min-width: 768px) {
     .layout {
@@ -167,6 +181,9 @@ li {
     }
     #phone_nav {
         visibility: hidden;
+    }
+    footer {
+        width: 78vw;
     }
     
 }
@@ -212,5 +229,8 @@ li {
     }
     #phone_nav {
         visibility: hidden;
+    }
+    footer {
+        width: 78vw;
     }
 }
