@@ -64,8 +64,12 @@ footer {
     }
     #container {
         width: 90vw;
-        height: 60vh;
+        height: 85vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 50vh 50vh 10vh 50vh;
     }
+    
     
 }
 @media only screen and (min-width: 600px) {
@@ -84,7 +88,11 @@ footer {
     #container {
         width: 90vw;
         height: 60vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 50vh 50vh 10vh 50vh;
     }
+
 }
 
 
@@ -100,19 +108,40 @@ footer {
     }
     #container {
         width: 78vw;
-        height: 60vh;
+        height: 82vh;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 50vh 10vh 50vh;
+    }
+
+    .categoryTitle {
+        grid-column: span 2;
     }
 }
 
 @media only screen and (min-width: 992px) {
     #container {
         width: 78vw;
-        height: 40vh;
+        height: 83vh;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 50vh 10vh 50vh;
+    }
+
+    .categoryTitle {
+        grid-column: span 3;
     }
 }
 @media only screen and (min-width: 1200px) {
     #container {
         width: 78vw;
-        height: 60vh;
+        height: 84vh;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10vh 50vh 10vh 50vh;
+    }
+
+    .categoryTitle {
+        grid-column: span 4;
     }
 }
